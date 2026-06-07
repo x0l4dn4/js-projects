@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Outfit' 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    background-image: url('https://images8.alphacoders.com/757/thumb-1920-757546.png');
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+.panel{
+  background-size: cover;
+}
