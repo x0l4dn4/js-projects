@@ -17,6 +17,7 @@ body {
     justify-content: center;
     overflow: hidden;
     height: 100vh;
+    /* All images used in this project are sourced from AlphaCoders.com. All rights remain with their respective authors. This project is for private use only. */
     background-image: url('https://images8.alphacoders.com/757/thumb-1920-757546.png');
 }
 
@@ -26,4 +27,38 @@ body {
 }
 .panel{
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: aliceblue;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.6 ease-in;
+}
+
+.panel h2 {
+  font-size: 25px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.enabled {
+  flex: 5;
+}
+
+.panel.enabled h3 {
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  
 }
